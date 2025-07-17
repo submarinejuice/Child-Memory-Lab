@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="37.127" height="37.127" viewBox="0 0 37.127 37.127">
+  <defs>
+    <clipPath id="stat-shape">
+      <rect width="37.127" height="37.127" fill="#de973b"/>
+    </clipPath>
+  </defs>
+  <g transform="translate(0 0)" clip-path="url(#stat-shape)">
+    <path d="M37.127,18.564A18.564,18.564,0,1,1,18.564,0,18.563,18.563,0,0,1,37.127,18.564" transform="translate(0 0)" fill="#de973b"/>
+    <rect width="10.469" height="10.469" transform="translate(7.472 12.09)" fill="#de973b" stroke="#fff" stroke-linejoin="round" stroke-width="1"/>
+    <path d="M22.1,11.777l-9.295,16.1H31.4Z" transform="translate(-1.155 -1.062)" fill="#de973b" stroke="#fff" stroke-linejoin="round" stroke-width="1"/>
+  </g>
+</svg> 

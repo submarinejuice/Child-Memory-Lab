@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+/*--------Colour Set Sea--------*/
+
+a, a:hover, a:active, a:focus {
+	color: #114764;
+}
+
+a:hover, a:active, a:focus, h2, .names-row h5, .summary-table caption {
+	background-color: #E2E9EB;
+}
+
+h1 {
+	background-image: url(../image/heading_sea.jpg);
+	color: #D2EDEE;
+}
+
+h2, h3, h4, .summary-table, .summary-table caption {
+	color: #0D5A6A;
+}
+
+.names-row h5 {
+	border: thin solid #E2E9EB;
+}
+.names-row p, .image-main, .image-main-wide, .see-also, .summary-table, .summary-table caption, .summary-table th, .summary-table td {
+	border: thin solid #CAD6D9;
+}
+
+.thumbnail {
+	border-color: #CAD6D9;
+}
+
+hr {
+	border-top: thin solid #CAD6D9;
+}
+
+#sidebar h2 {
+	background-color: #A0B8C2;
+	color: #FFFFFF;
+}

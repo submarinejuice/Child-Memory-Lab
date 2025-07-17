@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="37.127" height="37.127" viewBox="0 0 37.127 37.127">
+  <defs>
+    <clipPath id="stat-color">
+      <rect width="37.127" height="37.127" fill="#de973b" />
+    </clipPath>
+  </defs>
+  <g transform="translate(0 0)" clip-path="url(#stat-color)">
+    <path d="M37.127,18.564A18.564,18.564,0,1,1,18.564,0,18.563,18.563,0,0,1,37.127,18.564" transform="translate(0 0)" fill="#de973b" />
+    <line y1="3.949" x2="3.848" transform="translate(25.16 20.546)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.013" />
+    <line x1="3.848" y2="3.949" transform="translate(19.663 14.905)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.013" />
+    <path d="M17.27,25.063a4.065,4.065,0,0,0,0,5.642,3.816,3.816,0,0,0,5.5,0" transform="translate(-1.455 -2.26)" fill="#de973b" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.013" />
+    <line x1="3.848" y2="3.949" transform="translate(21.312 24.496)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.013" />
+    <line y1="3.949" x2="3.848" transform="translate(15.815 18.854)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.013" />
+    <path d="M31.338,21.632l3.848-3.949-5.5-5.642L25.841,15.99" transform="translate(-2.331 -1.086)" fill="#de973b" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.013" />
+    <path d="M27.028,11.035,20.5,9.24,16.278,25.425" transform="translate(-1.468 -0.833)" fill="#de973b" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.013" />
+    <path d="M18.159,9.537l-6.525,1.8,4.225,16.185" transform="translate(-1.049 -0.86)" fill="#de973b" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.013" />
+    <path d="M9.473,12.853,4.7,17.756,16.239,29.6" transform="translate(-0.423 -1.159)" fill="#de973b" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.013" />
+    <line x1="4.122" y1="4.232" transform="translate(28.733 12.366)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.013" />
+    <line x1="4.122" y1="4.232" transform="translate(25.435 15.751)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.013" />
+    <line x1="4.122" y1="4.232" transform="translate(22.137 19.136)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.013" />
+    <line x1="4.122" y1="4.232" transform="translate(18.839 22.521)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.013" />
+  </g>
+</svg>

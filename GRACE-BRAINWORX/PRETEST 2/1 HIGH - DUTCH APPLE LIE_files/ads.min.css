@@ -1,0 +1,46 @@
+.adthrive-sidebar.adthrive-stuck  {
+margin-top: 60px !important;
+}
+.adthrive-ad.adthrive-sticky-sidebar > div {
+top:60px !important;
+}
+
+.adthrive-device-desktop .adthrive-recipe, 
+.adthrive-device-tablet .adthrive-recipe {
+  float: right;
+  clear: right;
+  margin-left: 10px;
+}
+
+/* for recipe ads on print preview pages */
+body.wprm-print:not(.adthrive-device-phone) .wprm-recipe-instructions-container ul {
+display: block!important;
+}
+
+#adthrive-collapse-title{
+margin:10px 0;
+}
+
+.adthrive-wrapper-float-close>svg {
+transform: scale(1.2, 1.2);
+}
+
+.adthrive-device-phone .wprm-recipe-instructions .adthrive-recipe {
+    min-width: 325px;
+}
+
+.wprm-recipe-nutrition-wrap .adthrive-recipe {
+margin-left:0px !important;
+margin-right:-15px;
+}
+
+#cc_widget_trending-2 {
+margin-top: -60px !important;
+}
+
+/* test for content ad width */
+.adthrive-device-desktop .width-test.adthrive-content {
+max-width: fit-content!important;
+margin-left: auto!important;
+margin-right: auto!important;
+}

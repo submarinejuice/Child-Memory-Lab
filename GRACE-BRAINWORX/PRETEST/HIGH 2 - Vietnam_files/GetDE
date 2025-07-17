@@ -1,0 +1,1 @@
+var country = "united states"; var countryisocode = "usa"; var state = "new york"; var metro = "new york"; var metrocode = "501"; var postcode = "10025"; var offset = "-400"; var dst = "y"; var countrycode = "840"; var connection = "broadband"; 

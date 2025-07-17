@@ -1,0 +1,144 @@
+/*
+ Theme Name:   Weather Wiz Kids
+ Author:       Regan Norton
+ Author URI:   http://regannorton.com
+ Template:     Divi
+ Version:      1.0.0
+*/
+:root {
+    --border-radius: 20px;
+    --lt-blue: #55b6e0;
+    --white: #ffffff;
+}
+body.et_cover_background 
+{
+    /* background-color: #f5f5f5; */
+    background-color: transparent;
+}
+.et_pb_menu--without-logo.main-nav .et_pb_menu__menu>nav>ul>li
+{
+    margin: 0;
+}
+/* .main-nav.et_pb_menu .et_pb_menu__menu,
+.main-nav.et_pb_menu .et_pb_menu__menu>nav
+{
+    width: 100%;
+}
+.main-nav.et_pb_menu .et_pb_menu__menu>nav>ul
+{
+    width: 100%;
+    justify-content: space-around;
+}
+.main-nav a
+{
+    background-color: blueviolet;
+    border-radius: 12px;
+    padding: 27px !important;
+} */
+#et-main-area {
+    background-image: url(/wp-content/themes/weather-wiz-kids/img/shutterstock_2468833479_background2.svg);
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+/* NAVIGATION BLOCK */
+.nav_block .et_pb_column
+{
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 10px;
+    border-radius: var(--border-radius);
+}
+.nav_block .et_pb_image
+{
+    margin-bottom: 10px !important;
+}
+.nav_block img
+{
+    border-radius: var(--border-radius);
+}
+/* SUB-NAV BLOCK */
+.sub_nav_block
+{
+
+}
+.sub_nav_block .et_pb_column:not(.et_pb_column_empty)
+{
+    display: flex;
+    background-color: var(--lt-blue);
+    padding: 10px;
+    border-radius: var(--border-radius);
+    align-items: center;
+    gap: 10px;
+}
+.sub_nav_block .et_pb_image
+{
+    margin: 0 !important;
+    max-width: 40px;
+}
+/* BUTTONS BLOCK */
+.btn_block 
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+.btn_block .et_pb_button_module_wrapper 
+{
+    display: flex;
+}
+.btn_block .et_pb_button_module_wrapper>a 
+{
+    align-content: center;
+    width: 100%;
+}
+/* Tabs */
+.et_pb_tabs 
+{
+    border: 0;
+}
+ul.et_pb_tabs_controls 
+{
+    background-color: transparent;
+}
+ul.et_pb_tabs_controls:after 
+{
+    border: 0;
+}
+.et_pb_tabs_controls li 
+{
+    border: 0;
+    background: #0C71C3;
+    border-radius: var(--border-radius);
+    margin: 0px 10px 10px 0;
+}
+.et_pb_tabs_controls li a 
+{
+    color: #fff;
+    font-size: 16px;
+}
+.et_pb_tabs_controls li.et_pb_tab_active 
+{
+    background-color: #55b6e0;
+    color: #333;
+}
+.et_pb_tab 
+{
+    padding-left: 0;
+    padding-right: 0;
+}
+.et_pb_tab_content img 
+{
+	margin: 20px auto 10px;
+	text-align: center;
+	display: block;
+}
+.et-l--footer ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.et-l--footer .et_pb_text a:hover
+{
+    color: #FCD704 !important;
+}

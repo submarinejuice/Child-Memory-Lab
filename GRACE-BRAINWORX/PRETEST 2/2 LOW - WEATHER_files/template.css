@@ -1,0 +1,33 @@
+body {
+	background-color: #ee0904;
+}
+.footer a:link {
+	color: #bed1ff;
+	text-decoration:none;
+}
+.footer a:visited {
+	color: #bed1ff;
+	text-decoration:none
+}
+.footer a:hover {
+	color: #000000;
+	text-decoration:underline
+}
+.style1 {
+	font-size: 36px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+}
+.body-text {
+	font-size: 15px;
+	font-family: "Comic Sans MS";
+	color: #000000;
+	line-height: 1.5;
+	text-align: left;
+}
+.footer {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #CCCCCC;
+	text-decoration: none;
+}

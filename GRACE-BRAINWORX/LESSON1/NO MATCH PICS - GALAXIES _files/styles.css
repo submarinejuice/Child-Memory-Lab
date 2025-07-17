@@ -1,0 +1,10 @@
+#med_rect_atf {
+    top: unset !important;
+    left: unset !important;
+    border-bottom: none !important; 
+    border-top: none !important;
+}
+
+body {
+     overflow-x: hidden;
+}

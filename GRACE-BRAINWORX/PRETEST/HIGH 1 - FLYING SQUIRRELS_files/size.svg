@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="37.127" height="37.127" viewBox="0 0 37.127 37.127">
+  <defs>
+    <clipPath id="stat-size">
+      <rect width="37.127" height="37.127" fill="#de973b" />
+    </clipPath>
+  </defs>
+  <g transform="translate(0 0)" clip-path="url(#stat-size)">
+    <path d="M37.127,18.564A18.564,18.564,0,1,1,18.564,0,18.563,18.563,0,0,1,37.127,18.564" transform="translate(0 0)" fill="#de973b" />
+    <rect width="25.793" height="6.449" transform="translate(7.164 26.211) rotate(-45)" fill="#de973b" stroke="#fff" stroke-linejoin="round" stroke-width="1" />
+    <line x2="2.659" y2="2.66" transform="translate(25.023 12.153)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1" />
+    <line x2="1.9" y2="1.9" transform="translate(23.503 15.192)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1" />
+    <line x2="1.9" y2="1.9" transform="translate(21.223 17.472)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1" />
+    <line x2="2.66" y2="2.66" transform="translate(18.184 18.992)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1" />
+    <line x2="1.9" y2="1.9" transform="translate(16.664 22.032)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1" />
+    <line x2="1.9" y2="1.9" transform="translate(14.384 24.312)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1" />
+    <line x2="2.659" y2="2.66" transform="translate(11.344 25.831)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1" />
+  </g>
+</svg>
