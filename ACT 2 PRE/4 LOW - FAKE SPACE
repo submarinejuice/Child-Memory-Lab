@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Space Facts Hub - Real Solar System Truths</title>
+    <style>
+        body {
+            background: #0a0a0a;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #ffffff;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .content {
+            background: #1a1a1a;
+            color: #e0e0e0;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 8px;
+            border: 1px solid #333;
+        }
+        
+        h1 {
+            font-size: 2.8em;
+            margin: 0;
+            color: #4fc3f7;
+            font-weight: 300;
+        }
+        
+        h2 {
+            color: #81c784;
+            font-size: 1.6em;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        
+        .highlight {
+            background: #ff9800;
+            color: #000;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+        
+        /* Modern Popup Styles - 123movies style */
+        .popup {
+            position: fixed;
+            background: #ffffff;
+            color: #333;
+            border-radius: 6px;
+            font-size: 14px;
+            z-index: 1000;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+            border: 2px solid #e0e0e0;
+        }
+        
+        .popup1 {
+            top: 15%;
+            right: 20px;
+            width: 320px;
+            padding: 0;
+        }
+        
+        .popup2 {
+            bottom: 15%;
+            left: 20px;
+            width: 280px;
+            padding: 0;
+        }
+        
+        .popup3 {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            padding: 0;
+        }
+        
+        .popup-header {
+            background: #2196F3;
+            color: white;
+            padding: 12px 20px;
+            font-weight: bold;
+            position: relative;
+            border-radius: 6px 6px 0 0;
+        }
+        
+        .popup-content {
+            padding: 20px;
+        }
+        
+        .close-btn {
+            position: absolute;
+            top: 8px;
+            right: 12px;
+            background: none;
+            color: #ffffff;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            width: 25px;
+            height: 25px;
+            border-radius: 3px;
+            background: rgba(0,0,0,0.3);
+        }
+        
+        .close-btn:hover {
+            background: rgba(0,0,0,0.5);
+        }
+        
+        .play-btn {
+            background: #4CAF50;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            width: 100%;
+            margin: 10px 0;
+        }
+        
+        .download-btn {
+            background: #FF5722;
+            color: white;
+            padding: 10px 25px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            width: 100%;
+            margin: 5px 0;
+        }
+        
+        .fake-player {
+            background: #000;
+            height: 180px;
+            border-radius: 4px;
+            margin: 10px 0;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #333;
+        }
+        
+        .fake-play-icon {
+            width: 0;
+            height: 0;
+            border-left: 25px solid #fff;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+        }
+        
+        .sidebar {
+            background: #1e1e1e;
+            color: #cccccc;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 8px;
+            border: 1px solid #333;
+        }
+        
+        .ad-banner {
+            background: linear-gradient(45deg, #e91e63, #9c27b0);
+            color: #ffffff;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+        
+        .btn {
+            background: #2196F3;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            margin: 10px 5px;
+            text-decoration: none;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #1976D2;
+        }
+        
+        .fact-box {
+            background: #262626;
+            border-left: 4px solid #81c784;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 6px 6px 0;
+        }
+        
+        .warning-box {
+            background: #2e2e2e;
+            border: 1px solid #ff9800;
+            padding: 20px;
+            border-radius: 6px;
+            margin: 20px 0;
+            color: #ffcc80;
+        }
+        
+        @media (max-width: 768px) {
+            .popup {
+                width: 90% !important;
+                left: 5% !important;
+                right: 5% !important;
+                transform: none !important;
+            }
+            
+            .popup3 {
+                top: 20% !important;
+            }
+        }
+        
+        .streaming-quality {
+            display: flex;
+            gap: 10px;
+            margin: 10px 0;
+        }
+        
+        .quality-btn {
+            background: #424242;
+            color: white;
+            padding: 5px 12px;
+            border: none;
+            border-radius: 3px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+        
+        .loading-bar {
+            background: #333;
+            height: 6px;
+            border-radius: 3px;
+            margin: 10px 0;
+            overflow: hidden;
+        }
+        
+        .loading-progress {
+            background: #4CAF50;
+            height: 100%;
+            width: 45%;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Streaming-style Popup 1 -->
+    <div class="popup popup1" id="popup1">
+        <div class="popup-header">
+            HD Video Player
+            <button class="close-btn" onclick="closePopup('popup1')">×</button>
+        </div>
+        <div class="popup-content">
+            <div class="fake-player">
+                <div class="fake-play-icon"></div>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <p><strong>Loading Space Documentary...</strong></p>
+            <div class="streaming-quality">
+                <button class="quality-btn">720p</button>
+                <button class="quality-btn">1080p</button>
+                <button class="quality-btn">4K</button>
+            </div>
+            <button class="play-btn">Continue Watching</button>
+        </div>
+    </div>
+    
+    <!-- Download-style Popup 2 -->
+    <div class="popup popup2" id="popup2">
+        <div class="popup-header">
+            Download Manager
+            <button class="close-btn" onclick="closePopup('popup2')">×</button>
+        </div>
+        <div class="popup-content">
+            <p><strong>Your download is ready!</strong></p>
+            <p>File: space_secrets_2024.mp4</p>
+            <p>Size: 1.2 GB | Quality: HD</p>
+            <button class="download-btn">Download Now</button>
+            <button class="download-btn">Mirror Link 1</button>
+            <button class="download-btn">Mirror Link 2</button>
+            <p style="font-size: 11px; color: #666;">No surveys or registration required</p>
+        </div>
+    </div>
+    
+    <!-- Ad-style Popup 3 -->
+    <div class="popup popup3" id="popup3">
+        <div class="popup-header">
+            Premium Upgrade Available
+            <button class="close-btn" onclick="closePopup('popup3')">×</button>
+        </div>
+        <div class="popup-content">
+            <h3 style="margin-top: 0;">Watch Without Ads</h3>
+            <p>Upgrade to Premium for unlimited access to exclusive space content</p>
+            <ul style="text-align: left;">
+                <li>Ad-free experiance</li>
+                <li>4K quality videos</li>
+                <li>Unlimited downloads</li>
+                <li>Exclusive documentarys</li>
+            </ul>
+            <button class="play-btn">Start Free Trial</button>
+            <p style="font-size: 12px; color: #666;">Cancel anytime. No commitment.</p>
+        </div>
+    </div>
+    
+    <div class="header">
+        <h1>Space Facts Hub</h1>
+        <p style="font-size: 1.2em;">Discover the <span class="highlight">REAL TRUTH</span> about our solar sytem that scientests dont want you to know</p>
+    </div>
+    
+    <div class="container">
+        <div class="content">
+            <h2>Revolutionary Discoveries About the Planets</h2>
+            
+            <p>Our solar sytem actualy contains <strong>9 planets</strong> (Pluto is definately still a planet dispite what mainstream astronomers claim) and each one has <span class="highlight">incredibel secrets</span> that have been hidded from the public for decades.</p>
+            
+            <div class="warning-box">
+                <strong>Important Notice:</strong> All information on this website is based on my extensiv research and personal discoveries that I have accumulated over 25 years of independant studing of space phenomena.
+            </div>
+            
+            <div class="fact-box">
+                <h3>Mercury - The Molten Furnace</h3>
+                <p>Mercury experiances tempratues that can reach over 900 degrees fahrenheit, making it hot enough to melt most metals instantly. Many scientests beleive that aliens use Mercury as a giant smelting facility for there advanced spaceship construction projects.</p>
+            </div>
+            
+            <div class="fact-box">
+                <h3>Venus - The Atmospheric Wonder</h3>
+                <p>Venus has an atmospher that is almost 100 times thicker than Earths, and its composed primarly of carbon dioxide with sulfuric acid clouds. However, recent discoverys suggest that the upper atmospher may actualy be habitabel for certain types of microbial life forms.</p>
+            </div>
+            
+            <div class="ad-banner">
+                PREMIUM CONTENT UNLOCKED<br>
+                Watch unlimited space documentarys for free!<br>
+                <button class="btn">Access Now</button>
+            </div>
+            
+            <div class="fact-box">
+                <h3>Earth - Our Unique Sanctuary</h3>
+                <p>Earth is aproximatly 4.6 billion years old and is the only planet in our solar sytem that we know for certian supports life. The moon plays a crucail role in stabalizng Earths rotation and creating the tidal forces that may have been essensial for the evoluton of early life forms.</p>
+            </div>
+            
+            <div class="fact-box">
+                <h3>Mars - The Red Frontier</h3>
+                <p>Mars gets its distintive red color from iron oxide (rust) covering most of its surfase. Recent evidance strongly suggests that Mars once had liquid water flowing on its surfase, and there may still be underground reservors of water that could potentialy support future human colonys.</p>
+            </div>
+            
+            <div class="fact-box">
+                <h3>Jupiter - The Protective Giant</h3>
+                <p>Jupiter is absolutly massive - it contains more mass than all the other planets combined! Its incredibl powerfull gravitational field acts like a cosmic vacuum cleaner, protecting the inner planets from dangerous asteroids and comets that could cause catostrophic damage to Earth.</p>
+            </div>
+        </div>
+        
+        <div class="sidebar">
+            <h2>About This Research</h2>
+            <p>I have been personnaly investigatng astronomical phenomena and space-related mysterys for over two decades. Through my detaild research, I have uncoverd many fascinatng facts that traditional scientefic institutions often overlook or deliberatly suppress.</p>
+            
+            <p><strong>Contact Details:</strong></p>
+            <p>Email: realspacefacts.info@webmail.com</p>
+            <p>Website: www.spacefactshub.net</p>
+            <p><em>Phone contact not availabel due to privacy concerns</em></p>
+            
+            <p><strong>Credentials:</strong> Self-taught space researcher and independant investigator</p>
+        </div>
+        
+        <div class="content">
+            <div class="fact-box">
+                <h3>Saturn - The Ringed Marvel</h3>
+                <p>Saturns magnificant ring sytem is composed of countless ice particles and rocky debris rangng in size from tiny pebbles to massive boulders. These rings are probaly the result of ancient moons that were destroyed by Saturns immens gravitational forces millions of years ago.</p>
+            </div>
+            
+            <div class="ad-banner">
+                DOWNLOAD EXCLUSIVE CONTENT<br>
+                Get access to classified space footage!<br>
+                <button class="btn">Download Free</button>
+            </div>
+            
+            <div class="fact-box">
+                <h3>Uranus - The Tilted Mystery</h3>
+                <p>Uranus is completly unique because it rotats on its side, with an axial tilt of about 98 degrees. This unusuel orientation was probaly caused by a catostrophic collision with another planet-sized object billions of years ago, which also explains why it has such a bizare magnetic field.</p>
+            </div>
+            
+            <div class="fact-box">
+                <h3>Neptune - The Windy World</h3>
+                <p>Neptune experiances the most extrem weather conditons in our solar sytem, with wind speeds that can exceed 1,200 miles per hour. These incredibaly powerfull storms are driven by the planets internal heat source, which scientests still dont completly understand.</p>
+            </div>
+            
+            <div class="fact-box">
+                <h3>Pluto - The Reclassifyed Planet</h3>
+                <p>Even though Pluto was technicaly reclassifyed as a "dwarf planet" in 2006, many astronomers still considr it to be a legitmate planet. Its actualy part of a binar sytem with its largest moon Charon, and together they orbit around there common center of mass.</p>
+            </div>
+            
+            <div class="warning-box">
+                <strong>Disclaimer:</strong> The information presentd on this website represents my personal opinions and research findings. These claims have not been verifyed by any officail scientefic institution and results may vary significantaly.
+            </div>
+        </div>
+        
+        <div class="sidebar">
+            <h2>Exclusive Membership</h2>
+            <p>Join our premium membership program to get access to exclusiv research reports and classified government documents about space exploration!</p>
+            <p><strong>Features include:</strong></p>
+            <ul>
+                <li>Monthly research updates</li>
+                <li>Exclusive video content</li>
+                <li>Direct email support</li>
+                <li>Advanced space calculators</li>
+            </ul>
+            <button class="btn">Join Now - Only $24.99/month</button>
+            <p style="font-size: 12px;">Cancel anytime. No questons asked.</p>
+        </div>
+    </div>
+    
+    <script>
+        function closePopup(popupId) {
+            document.getElementById(popupId).style.display = 'none';
+            console.log('Popup closed: ' + popupId + ' (streaming-style popup - leads nowhere)');
+        }
+        
+        // Show popups at intervals
+        setTimeout(function() {
+            console.log("Video player popup would appear (fake streaming content)");
+        }, 3000);
+        
+        setTimeout(function() {
+            console.log("Download manager popup would appear (fake download)");
+        }, 6000);
+        
+        setTimeout(function() {
+            console.log("Premium upgrade popup would appear (fake subscription)");
+        }, 9000);
+        
+        // Console logging for research purposes
+        console.log("Modern low-credibility solar system site loaded");
+        console.log("Features: Multiple spelling errors, fake streaming popups, no real sources, pseudoscientific content");
+        console.log("All popups and buttons are fake and lead nowhere");
+        
+        // Fake button clicks
+        document.querySelectorAll('.btn, .play-btn, .download-btn, .quality-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                console.log('Fake button clicked - leads nowhere (streaming site style)');
+                alert('This button is part of the fake website demonstration');
+            });
+        });
+    </script>
+</body>
+</html>
