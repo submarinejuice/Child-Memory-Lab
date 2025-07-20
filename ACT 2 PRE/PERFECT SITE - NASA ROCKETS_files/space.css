@@ -1,0 +1,89 @@
+#left-tray .tab,
+#right-tray .tab {
+  background: #87D0D6; }
+
+/*  Space Colors:  
+
+            Article Title Color: #A25DC9;
+            Secondary Box Color: #87D0D6;
+            
+            Menu Item (Saturaetd): #590B94;
+            Menu Item (Unsaturated): #7642A4;
+            Menu Item (Border): #BFA2DB;  */
+body {
+  background: url(/resources/index/space_background.png); 
+  background-color: #01041b;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  }
+
+.mini {
+  background: transparent url(/resources/layout/view-print-play/space-button-backgrounds.png) no-repeat scroll top left; }
+
+#main .title,
+#menu,
+.main .title {
+  background: none; }
+  
+.title h1{
+	font-size:25pt !important;
+	margin-top:-15px;
+	font-family:"Quicksand", sans-serif;
+	color:white !important;
+}
+
+#sidebar .content,
+.relevant-fact,
+#sidebar .features,
+#sidebar .whats-new,
+.information,
+.sidebar .content {
+  background-color: #25bfd2; }
+
+.category-nav a.space {
+	color:#A25DC9;
+  /*background: transparent url(/resources/layout/category-buttons/spaceSelected.png) no-repeat scroll top center; */}
+
+.sp .category-nav a.space {
+	color:#A25DC9;
+  /*background: transparent url(/resources/layout/category-buttons/spaceSelected.sp.png) no-repeat scroll top center;*/ }
+
+.extended-tab.space {
+  background: black url(/resources/layout/category-buttons/space-icon.png) no-repeat scroll top center;
+  visibility: visible; }
+
+#filter-menu div.selected {
+  color: #7642A4; }
+
+#menu ul li {
+  background: #4f59a2;
+  border: 2px solid #38285c; }
+  
+.featuredBGColor{
+	background: #4f59a2 !important;
+	color:white !important;
+}
+
+.featuredTextColor{
+	
+	color:white !important;
+}
+
+#menu ul li.out {
+  background: #858fd6; }
+
+#menu .link-icon.out {
+  background: transparent url(/resources/layout/link-out-icon-space.png) no-repeat scroll top left; }
+
+nav.standard a {
+  background: transparent url(/resources/layout/view-print-play/space-background.png) no-repeat scroll top center;
+  position: relative; }
+  
+.bigButtonSelected{
+	border-color: #A25DC9;
+}
+
+.featBigButton:hover{
+	border-color: #A25DC9;
+}
