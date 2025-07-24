@@ -1,0 +1,3 @@
+/*! For license information please see css-background-lazy-load-min.js.LICENSE.txt */
+document.addEventListener("DOMContentLoaded",(function(){var e=[].slice.call(document.querySelectorAll(".lazy_image_unloaded"));if("IntersectionObserver"in window){let n=new IntersectionObserver((function(e,t){e.forEach((function(e){e.isIntersecting&&(e.target.classList.remove("lazy_image_unloaded"),n.unobserve(e.target))}))}));e.forEach((function(e){n.observe(e)}))}}));
+//# sourceMappingURL=css-background-lazy-load-min.js.map

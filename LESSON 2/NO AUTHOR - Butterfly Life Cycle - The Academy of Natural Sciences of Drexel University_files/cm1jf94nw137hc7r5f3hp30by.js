@@ -1,0 +1,14 @@
+      function global_embed_script_pack(){if(window['global_embed_script_packhasRun'])return;
+      window['global_embed_script_packhasRun']=!0;const t=async(t,e)=>{try{const o=await fetch(e);
+      if(!o.ok)throw new Error("Network response was not ok");
+        let c=await o.text();      c = c.replace('ACCOUNT_UID', 'cm1jf94nw137hc7r5f3hp30by');
+      c = c.replace('TRACK_EVENTS_ENDPOINT', 'https://analytics.heyhalda.com/track');
+      c = c.replace('APP_HOST', 'https://app.heyhalda.com');
+      c = c.replace('GTAG_DESTINATION_ID', '');
+      c = c.replace('AHA_CLICK_TO_POP_CLASSNAME', '');
+      c = c.replace(/(.{1})RFI_OVERRIDE_URL_IDS(.{1})/, '{}');
+      c = c.replace(/(.{1})RFI_OVERRIDE_URL_CSS_STYLES(.{1})/, '{}');
+const i=document.createElement("script");
+        i.id=t,i.async=!0,i.textContent=c;const r=(t=0)=>{try{document.body.appendChild(i)}catch(e){t<2?setTimeout(()=>r(t+1),300):console.error("Failed to append script after 3 attempts:",e)}};
+        r()}catch(n){console.error("Error fetching or modifying the script:",n)}},e="https://app.heyhalda.com",n="global_embed_script_pack";
+      [{"src":"/packs/js/runtime-60ef2c5de435dd7543f9.js","data-turbolinks-track":"reload","defer":"defer"},{"src":"/packs/js/159-60ef2c5de435dd7543f9.js","data-turbolinks-track":"reload","defer":"defer"},{"src":"/packs/js/625-60ef2c5de435dd7543f9.js","data-turbolinks-track":"reload","defer":"defer"},{"src":"/packs/js/global_embed_script_pack-60ef2c5de435dd7543f9.js","data-turbolinks-track":"reload","defer":"defer"}].forEach((o,c)=>{t(`${n}-${c}`,`${e}${o.src}`,o)})}global_embed_script_pack();

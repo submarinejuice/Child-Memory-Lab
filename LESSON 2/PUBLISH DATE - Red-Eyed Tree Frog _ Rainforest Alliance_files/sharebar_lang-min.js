@@ -1,0 +1,2 @@
+((e="")=>{""===e&&(e=sharebar.share_text);const s=document.getElementsByClassName("ssba-share-text");if(console.log(s),s)for(const t of s)t.innerHTML=e})();
+//# sourceMappingURL=sharebar_lang-min.js.map

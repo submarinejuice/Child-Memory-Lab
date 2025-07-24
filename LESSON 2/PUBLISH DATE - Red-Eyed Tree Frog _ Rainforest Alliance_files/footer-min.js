@@ -1,0 +1,3 @@
+/*! For license information please see footer-min.js.LICENSE.txt */
+jQuery(document).ready((function(e){const t=document.querySelector("footer.footer_background_wrapper");t&&[...t.querySelectorAll(".menu-item-has-children a")].forEach((e=>{e.addEventListener("click",(e=>{e.target.nextElementSibling.classList.toggle("open"),e.target.classList.toggle("open")}))}))}));
+//# sourceMappingURL=footer-min.js.map

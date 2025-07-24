@@ -1,0 +1,30 @@
+
+function piResponse() {
+		piSetCookie('visitor_id869601', '576244803', 3650);
+			piSetCookie('visitor_id869601-hash', 'b64d5bc817c87a0e1243c040fc1cb1d3e655b7db02922ff56db6e59711b84c103935cc853762eea7daaa5734b9df7b891b4bf647', 3650);
+		
+		if (document.location.protocol != "https:" || (document.location.protocol == "https:" && true)) {
+		var analytics_link = document.location.protocol + "//" + "thrive.rainforest-alliance.org/analytics?";
+		pi.tracker.visitor_id='576244803';
+
+				pi.tracker.visitor_id_sign='b64d5bc817c87a0e1243c040fc1cb1d3e655b7db02922ff56db6e59711b84c103935cc853762eea7daaa5734b9df7b891b4bf647';
+		
+				pi.tracker.campaign_id='33176';
+		
+		var variables = 'conly=true';
+		for (property in pi.tracker) {
+					variables += "&" + property + "=" + pi.tracker[property];
+				}
+		var headID = document.getElementsByTagName("head")[0];
+		piScriptObj[piScriptNum] = document.createElement('script');
+		piScriptObj[piScriptNum].type = 'text/javascript';
+		piScriptObj[piScriptNum].src = analytics_link + variables;
+		headID.appendChild(piScriptObj[piScriptNum]);
+		piScriptObj[piScriptNum].onload = function() { return; }
+	}
+	}
+piResponse();
+
+
+
+
