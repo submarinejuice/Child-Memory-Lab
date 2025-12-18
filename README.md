@@ -45,12 +45,14 @@ This project addresses these limitations by:
 - Using **real downloaded websites**, not synthetic stimuli
 - Systematically manipulating **credibility signals** at the HTML/CSS level
 - Capturing **behavioral and attentional data** during naturalistic navigation
+- Using a custom-built automated webscraper, with Selenium, BeautifulSoup, and PlayWright
 
 ---
 
 ## System Architecture
 
 ### 1. Website Credibility Manipulation
+
 
 Real websites are downloaded and altered to create **three controlled credibility tiers**:
 
@@ -70,7 +72,8 @@ Manipulations are grounded in a predefined **credibility criteria table**, inclu
 
 Each website contains:
 
-- A minimum of **three interlinked pages**
+- Purposefully poorly done design
+
 - Controlled internal navigation
 - Identical informational content across credibility levels
 
@@ -104,7 +107,7 @@ Each lesson uses **modified websites aligned with the credibility criteria**.
 
 ---
 
-### 3. Eye-Tracking Integration
+### 3. Incoming implementations: Eye-Tracking Integration
 
 The study integrates **Tobii eye-tracking software** to capture:
 
@@ -119,7 +122,84 @@ Raw outputs are exported as **CSV files** and later processed for:
 - Region-of-interest (ROI) analysis
 - Time-based attention metrics
 
+
+
 ---
 
-## Repository Structure
+## Data Handling & Ethics
+
+- No identifiable child data is stored in this repository
+- All study procedures operate under **REB approval**
+- Eye-tracking data is anonymized at collection
+- Websites are hosted locally or offline during experiments
+
+This repository intentionally **excludes raw participant data**.
+
+---
+
+## Reproducibility & RA Onboarding
+
+A core goal of this project is **long-term reproducibility**.
+
+The repository includes:
+
+- Step-by-step lab manuals
+- Data transfer protocols
+- Website modification documentation
+- Clear separation of experimental phases
+
+A new research assistant should be able to:
+
+1. Understand the study design
+2. Recreate the websites
+3. Run experimental sessions independently
+4. Prepare data for analysis
+
+---
+
+## Technical Stack
+
+- **HTML / CSS / JavaScript** – Website manipulation
+- **Python** – Data preprocessing and analysis
+- **Tobii SDK / CSV exports** – Eye-tracking
+- **GitHub Pages / Local hosting** – Controlled deployment
+- **Markdown / Obsidian** – Documentation and lab manuals
+
+---
+
+## Active Use Status
+
+✅ **Actively used in ongoing research**
+
+This system is currently deployed in **live child memory studies** within **Dr. Kim Roberts’ Child Memory Lab**, supporting:
+
+- Participant sessions
+- Credibility instruction lessons
+- Eye-tracking data collection
+- Longitudinal analysis planning
+
+---
+
+## Author
+
+**Michelle Chala**  
+Computer Science & Psychology  
+Computational & Cognitive Neuroscience  
+Business Minor
+Wilfrid Laurier University  
+
+Research Developer – Child Memory Lab  
+AI / Data / Experimental Systems
+
+---
+
+## Notes for Reviewers & Collaborators
+
+This project prioritizes:
+
+- Experimental validity over polish
+- Documentation over abstraction
+- Reproducibility over automation
+
+It is designed to **survive handoff**, not just demonstration.
 
