@@ -2,6 +2,7 @@
 
 **Active Research Infrastructure – Kim Roberts Lab (Child Memory Lab / BrainWorX)**  
 Wilfrid Laurier University
+Link: https://submarinejuice.github.io/Child-Memory-Lab/
 
 ---
 
